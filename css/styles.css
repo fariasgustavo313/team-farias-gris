@@ -190,6 +190,19 @@ footer {
         margin: 20px auto; /* Agregar margen y centrar las tarjetas */
     }
 
+    .table-responsive {
+        overflow-x: auto; /* Permitir desplazamiento horizontal en dispositivos móviles */
+    }
+
+    /* Ajustar el ancho de las celdas en dispositivos móviles */
+    .table tbody tr td,
+    .table tbody tr th,
+    .table thead tr td,
+    .table thead tr th {
+        width: 100px; /* Cambia el valor según sea necesario */
+        white-space: nowrap; /* Evitar que el texto se ajuste automáticamente */
+    }
+
     .ubicacion {
         flex-direction: column; /* Cambiar la dirección de flexión a columna en dispositivos móviles */
         align-items: flex-start; /* Centrar los elementos horizontalmente en dispositivos móviles */
