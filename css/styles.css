@@ -194,6 +194,10 @@ footer {
         overflow-x: auto; /* Permitir desplazamiento horizontal en dispositivos móviles */
     }
 
+    .hide-mobile {
+        display: none;
+    }
+
     /* Ajustar el ancho de las celdas en dispositivos móviles */
     .table tbody tr td,
     .table tbody tr th,
@@ -210,7 +214,7 @@ footer {
 
     .mapa-contenedor {
         width: 100%; /* Ajustar el ancho al 100% en dispositivos móviles */
-        margin-bottom: 20px; /* Agregar margen inferior */
+        height: 300px; /* Ajustar la altura según sea necesario */
     }
 
     .texto-redes {
