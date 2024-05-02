@@ -66,9 +66,10 @@ nav ul li a:hover {
 }
 /* Estilos CSS para la imagen */
 .imagen {
-    width: 80%;
-    height: auto;
-    margin-left: 10%;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    max-width: 1000px; /* Define el ancho máximo de la imagen */
+    margin: 0 auto; /* Centra horizontalmente */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
 }
 
 .navbar-nav .nav-link {
@@ -94,6 +95,11 @@ nav ul li a:hover {
 .nuestros-campeones h2 {
     margin-bottom: 20px;
 }
+.carousel-item img {
+    max-height: 600px; /* Ajusta la altura máxima de las imágenes del carousel según sea necesario */
+    object-fit: contain; /* Escala la imagen para que cubra todo el contenedor manteniendo la proporción de aspecto */
+}
+
 .card-img-top {
     max-width: 70%;
     height: auto;
@@ -113,7 +119,7 @@ nav ul li a:hover {
 }
 
 .mapa-contenedor {
-    width: 60%; /* Ajusta el ancho del mapa */
+    width: 100%; /* Ajusta el ancho del mapa */
 }
 
 .texto-redes {
@@ -148,6 +154,12 @@ footer {
     padding: 20px;
     text-align: center;
 }
+footer div a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 768px) {
     nav ul {
@@ -207,33 +219,22 @@ footer {
         white-space: nowrap; /* Evitar que el texto se ajuste automáticamente */
     }
 
-    .ubicacion {
-        flex-direction: column; /* Cambiar la dirección de flexión a columna en dispositivos móviles */
-        align-items: flex-start; /* Centrar los elementos horizontalmente en dispositivos móviles */
+    .mapa-contenedor {
+        display: none;
     }
 
-    .mapa-contenedor {
-        width: 100%; /* Ajustar el ancho al 100% en dispositivos móviles */
-        height: 300px; /* Ajustar la altura según sea necesario */
+    .ubicacion {
+        flex-direction: column;
+        align-items: center;
     }
 
     .texto-redes {
-        width: 100%; /* Ajustar el ancho al 100% en dispositivos móviles */
-        margin-top: 20px; /* Añadir margen superior */
-    }
-
-    .redes-sociales {
-        display: flex;
-        flex-direction: column; /* Cambiar la dirección a columna */
-        align-items: flex-end; /* Centrar los elementos horizontalmente */
-        margin-top: 10px; /* Añadir un poco de margen superior */
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
     }
 
     .redes-sociales a {
-        margin: 5px 0; /* Añadir espacio entre los iconos */
-    }
-
-    .redes-sociales img {
-        width: 40px; /* Reducir el tamaño de los iconos */
+        margin: 5px; /* Añadir espacio entre los iconos */
     }
 }
