@@ -1,6 +1,7 @@
 /* Estilos generales */
 body, .contenido, .w-80 {
     font-family: Arial, sans-serif;
+    font-size: large;
     margin: 0;
     padding: 0;
     color: white;
@@ -13,7 +14,7 @@ section {
     padding: 20px;
 }
 .w-80 {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 .h-100 {
@@ -62,18 +63,19 @@ nav ul li a:hover {
 }
 
 .logo img {
-    width: 150px;
+    width: 120px;
 }
 /* Estilos CSS para la imagen */
 .imagen {
-    width: 80%; /* Ajusta el ancho según sea necesario */
-    max-width: 1000px; /* Define el ancho máximo de la imagen */
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    max-width: 100%; /* Define el ancho máximo de la imagen */
     margin: 0 auto; /* Centra horizontalmente */
     display: block; /* Asegura que la imagen se muestre como un bloque */
 }
 
 .navbar-nav .nav-link {
     color: white; /* Cambiar el color del texto de los enlaces del menú a blanco */
+    font-size: large;
 }
 
 /* Estilos CSS para la sección Nosotros */
@@ -95,11 +97,10 @@ nav ul li a:hover {
 .nuestros-campeones h2 {
     margin-bottom: 20px;
 }
-.carousel-item img {
-    max-height: 600px; /* Ajusta la altura máxima de las imágenes del carousel según sea necesario */
-    object-fit: contain; /* Escala la imagen para que cubra todo el contenedor manteniendo la proporción de aspecto */
+.card {
+    margin-right: 0 !important;
+    padding: 0 !important;
 }
-
 .card-img-top {
     max-width: 70%;
     height: auto;
@@ -114,14 +115,19 @@ nav ul li a:hover {
 .ubicacion {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .mapa-contenedor {
     width: 100%; /* Ajusta el ancho del mapa */
 }
-
+.mapa-col {
+    margin-left: -200px;
+}
+.table-col {
+    margin-right: 60px;
+}
 .texto-redes {
     width: 35%; /* Ajusta el ancho del contenido de texto y los iconos */
     display: flex;
@@ -137,7 +143,7 @@ nav ul li a:hover {
 }
 
 .redes-sociales a {
-    margin-right: 10px; /* Añade un espacio entre los iconos */
+    margin: 0px 50px; /* Añade un espacio entre los iconos */
 }
 
 .redes-sociales img {
@@ -158,83 +164,4 @@ footer div a {
     color: white;
     text-align: center;
     text-decoration: none;
-}
-
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 768px) {
-    nav ul {
-        display: none; /* Ocultar la lista de navegación en dispositivos móviles */
-        position: fixed;
-        width: 100%;
-        top: 70px; /* Ajustar la posición para que esté debajo del encabezado */
-        left: 0;
-        background-color: #333;
-        z-index: 1000;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    nav ul.active {
-        display: flex; /* Mostrar la lista de navegación cuando se activa */
-    }
-    
-    .menu-icon {
-        cursor: pointer;
-        display: block;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 2000;
-    }
-
-    .logo img {
-        width: 100px; /* Reducir el tamaño del logo en dispositivos móviles */
-    }
-
-    .imagen {
-        width: 100%; /* Hacer que la imagen ocupe todo el ancho en dispositivos móviles */
-        margin-left: 0; /* Eliminar el margen izquierdo en dispositivos móviles */
-    }
-
-    .card {
-        width: 90%; /* Ajustar el ancho de las tarjetas en dispositivos móviles */
-        margin: 20px auto; /* Agregar margen y centrar las tarjetas */
-    }
-
-    .table-responsive {
-        overflow-x: auto; /* Permitir desplazamiento horizontal en dispositivos móviles */
-    }
-
-    .hide-mobile {
-        display: none;
-    }
-
-    /* Ajustar el ancho de las celdas en dispositivos móviles */
-    .table tbody tr td,
-    .table tbody tr th,
-    .table thead tr td,
-    .table thead tr th {
-        width: 100px; /* Cambia el valor según sea necesario */
-        white-space: nowrap; /* Evitar que el texto se ajuste automáticamente */
-    }
-
-    .mapa-contenedor {
-        display: none;
-    }
-
-    .ubicacion {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .texto-redes {
-        width: 100%;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .redes-sociales a {
-        margin: 5px; /* Añadir espacio entre los iconos */
-    }
 }
