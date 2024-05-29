@@ -105,6 +105,9 @@ nav ul li a:hover {
     max-width: 70%;
     height: auto;
 }
+.card-body p {
+    font-size: medium;
+}
 .w-80 h2 {
     text-align: center;
 }
