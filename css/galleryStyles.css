@@ -1,0 +1,136 @@
+/* Estilos generales */
+body, .contenido, .w-80 {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #333;
+    background: linear-gradient(to bottom, #333, #8f8f8f);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#666666',GradientType=0);
+}
+section {
+    margin-bottom: 60px;
+    padding: 20px;
+}
+.w-80 {
+    width: 100%;
+    margin: auto;
+}
+.h-100 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.content {
+    width: 80%;
+    margin: auto;
+}
+h2 {
+    margin-bottom: 50px;
+}
+nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    padding: 14px 20px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+nav ul li {
+    margin-left: 10px;
+}
+nav ul li:first-child {
+    margin-left: 0;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #111;
+}
+
+.logo img {
+    width: 120px;
+}
+/* Estilos CSS para la imagen */
+.imagen {
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    max-width: 100%; /* Define el ancho máximo de la imagen */
+    margin: 0 auto; /* Centra horizontalmente */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Cambiar el color del texto de los enlaces del menú a blanco */
+    font-size: large;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery a {
+    display: block;
+    width: calc(33.333% - 10px);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer div a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
